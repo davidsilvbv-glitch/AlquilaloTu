@@ -1,0 +1,224 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Fredoka',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5efe6;
+color:#1e1e1e;
+overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#f5efe6;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#003d00;
+}
+
+nav a{
+margin:0 20px;
+text-decoration:none;
+color:#333;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#059900;
+}
+
+.btn-nav{
+background:#003d00;
+color:white;
+padding:10px 25px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 80px;
+position:relative;
+}
+
+.hero-text{
+max-width:500px;
+z-index:2;
+}
+
+.hero h1{
+font-size:60px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#059900;
+}
+
+.hero p{
+margin-bottom:30px;
+color:#555;
+}
+
+.btn-main{
+background:#059900;
+color:white;
+padding:15px 40px;
+border:none;
+border-radius:40px;
+font-size:16px;
+cursor:pointer;
+box-shadow:0 15px 35px rgba(5,153,0,0.3);
+transition:0.3s;
+}
+
+.btn-main:hover{
+transform:translateY(-3px);
+}
+
+/* HERO CARDS */
+
+.hero-cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+max-width:400px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* BACKGROUND SHAPE */
+
+.bg-shape{
+position:absolute;
+right:-150px;
+top:-100px;
+width:600px;
+height:600px;
+background:linear-gradient(135deg,#003d00,#059900);
+border-radius:50%;
+opacity:0.1;
+}
+
+/* FLOATING ICONS */
+
+.floating{
+position:absolute;
+width:120px;
+height:120px;
+opacity:0.05;
+background-size:contain;
+background-repeat:no-repeat;
+animation:float 6s ease-in-out infinite;
+}
+
+.icon1{background-image:url('https://cdn-icons-png.flaticon.com/512/2920/2920244.png'); top:20%; left:10%;}
+.icon2{background-image:url('https://cdn-icons-png.flaticon.com/512/727/727218.png'); bottom:15%; left:15%; animation-delay:1s;}
+.icon3{background-image:url('https://cdn-icons-png.flaticon.com/512/3063/3063822.png'); top:40%; right:20%; animation-delay:2s;}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+}
+
+/* FUNCIONA */
+
+.funciona{
+padding:120px 80px;
+text-align:center;
+background:white;
+}
+
+.steps{
+display:flex;
+justify-content:center;
+gap:60px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.step{
+background:#f5efe6;
+padding:40px;
+border-radius:20px;
+width:260px;
+box-shadow:0 15px 35px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.step:hover{
+transform:translateY(-8px);
+}
+
+/* IMPACTO */
+
+.impacto{
+padding:120px 80px;
+background:linear-gradient(135deg,#003d00,#059900);
+color:white;
+text-align:center;
+}
+
+.impact-grid{
+display:flex;
+gap:40px;
+justify-content:center;
+margin-top:60px;
+flex-wrap:wrap;
+}
+
+.impact-card{
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:20px;
+width:280px;
+backdrop-filter:blur(8px);
+transition:0.3s;
+}
+
+.impact-card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.2);
+}
+
+/* FOOTER */
+
+footer{
+padding:40px;
+text-align:center;
+background:#003d00;
+color:white;
+}
