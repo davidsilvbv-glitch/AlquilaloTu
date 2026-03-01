@@ -1,104 +1,454 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AlquilaloTu</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AlquilaloTu te ayuda a alquilar herramientas, tecnología y objetos útiles sin comprar de más.">
+    <title>AlquilaloTu | Deja de acumular, mejor alquila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="announcement-bar">
+            <p>Acceso inteligente a objetos para hogar, trabajo y proyectos puntuales.</p>
+            <a href="#descarga">Descargar la app</a>
+        </div>
 
-<header>
-  <div class="logo">AlquilaloTu</div>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#funciona">Cómo funciona</a>
-    <a href="#impacto">Impacto</a>
-    <a href="#Terminos y Condiciones">Términos y Condiciones</a>
-  </nav>
-  <button class="btn-nav">Descargar</button>
-</header>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a class="brand" href="#inicio">AlquilaloTu</a>
 
-<!-- HERO -->
-<section class="hero" id="inicio">
+            <div class="nav-links">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#la-app">La app</a>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#ventajas">Ventajas</a>
+                <a href="#descarga">Descarga</a>
+            </div>
 
-<div class="bg-shape"></div>
-<div class="floating icon1"></div>
-<div class="floating icon2"></div>
-<div class="floating icon3"></div>
+            <a
+                class="nav-cta"
+                href="https://play.google.com/store/apps/details?id=com.davidsilvbv.AlquilaloTu&pcampaignid=web_share"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fa-brands fa-google-play"></i>
+                Google Play
+            </a>
+        </nav>
+    </header>
 
-<div class="hero-text">
-  <h1>Deja de acumular, <span>mejor alquila.</span></h1>
-  <p>
-    Desde herramientas hasta instrumentos y tecnología.
-    AlquilaloTu impulsa la economía circular y conecta personas.
-  </p>
-  <button class="btn-main">Explorar</button>
-</div>
+    <main>
+        <section class="hero reveal" id="inicio">
+            <div class="hero-copy">
+                <span class="eyebrow">Alquiler inteligente entre personas</span>
+                <h1>Deja de acumular.<br><span>Mejor alquila.</span></h1>
+                <p>
+                    Herramientas, tecnología, mobiliario y objetos útiles sin compras innecesarias.
+                    Una experiencia pensada para adultos que valoran el acceso, el orden y una
+                    forma más inteligente de usar su dinero.
+                </p>
 
-<div class="hero-cards">
-  <div class="card">Taladro</div>
-  <div class="card">Proyector</div>
-  <div class="card">Monitor</div>
-  <div class="card">Guitarra</div>
-</div>
+                <div class="hero-actions">
+                    <a
+                        class="btn btn-solid"
+                        href="https://play.google.com/store/apps/details?id=com.davidsilvbv.AlquilaloTu&pcampaignid=web_share"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-google-play"></i>
+                        Descargar app
+                    </a>
+                    <a class="btn btn-outline" href="#como-funciona">
+                        <i class="fa-regular fa-compass"></i>
+                        Ver cómo funciona
+                    </a>
+                </div>
 
-</section>
+                <div class="hero-points">
+                    <div class="hero-point">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>Publica con fotos, precio diario y disponibilidad.</span>
+                    </div>
+                    <div class="hero-point">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <span>Encuentra cerca lo que necesitas sin comprar de más.</span>
+                    </div>
+                    <div class="hero-point">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>Convierte objetos guardados en valor real.</span>
+                    </div>
+                </div>
+            </div>
 
-<!-- COMO FUNCIONA -->
-<section class="funciona" id="funciona">
-<h2>Cómo funciona</h2>
+            <div class="hero-visual">
+                <div class="hero-stage">
+                    <div class="ambient-orb orb-1" aria-hidden="true"></div>
+                    <div class="ambient-orb orb-2" aria-hidden="true"></div>
+                    <div class="ambient-orb orb-3" aria-hidden="true"></div>
 
-<div class="steps">
+                    <div class="floating-object object-a">
+                        <i class="fa-solid fa-toolbox"></i>
+                        <span>Herramientas</span>
+                    </div>
+                    <div class="floating-object object-b">
+                        <i class="fa-solid fa-video"></i>
+                        <span>Proyectores</span>
+                    </div>
+                    <div class="floating-object object-c">
+                        <i class="fa-solid fa-tv"></i>
+                        <span>Monitores</span>
+                    </div>
+                    <div class="floating-object object-d">
+                        <i class="fa-solid fa-bicycle"></i>
+                        <span>Bicicletas</span>
+                    </div>
+                    <div class="floating-object object-e">
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <span>Cámaras</span>
+                    </div>
+                    <div class="floating-object object-f">
+                        <i class="fa-solid fa-couch"></i>
+                        <span>Mobiliario</span>
+                    </div>
 
-<div class="step">
-  <h3>1. Publica</h3>
-  <p>Sube cualquier objeto en minutos.</p>
-</div>
+                    <div class="device-frame" aria-label="Vista de la app AlquilaloTu">
+                        <div class="device-body">
+                            <div class="device-top">
+                                <span>18:49</span>
+                                <div class="device-notch" aria-hidden="true"></div>
+                                <span>59%</span>
+                            </div>
 
-<div class="step">
-  <h3>2. Reserva</h3>
-  <p>Usuarios encuentran lo que necesitan.</p>
-</div>
+                            <div class="device-screen">
+                                <div class="screen-header">
+                                    <div class="screen-brand">AlquilaloTu</div>
+                                    <div class="screen-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <span>Buscar herramientas, tecnología...</span>
+                                    </div>
+                                </div>
 
-<div class="step">
-  <h3>3. Gana</h3>
-  <p>Recibe ingresos y reduce desperdicio.</p>
-</div>
+                                <div class="screen-toolbar">
+                                    <span class="toolbar-chip">
+                                        <i class="fa-solid fa-filter"></i>
+                                        Categorías
+                                    </span>
+                                    <span class="toolbar-chip toolbar-chip--soft">Cerca de ti</span>
+                                </div>
 
-</div>
-</section>
+                                <div class="screen-grid">
+                                    <article class="listing-card listing-card--brick">
+                                        <div class="listing-media"></div>
+                                        <div class="listing-body">
+                                            <h3>Vestido color ladrillo</h3>
+                                            <p>Bs 70/día</p>
+                                        </div>
+                                    </article>
 
-<!-- IMPACTO -->
-<section class="impacto" id="impacto">
-<h2>Impacto social</h2>
+                                    <article class="listing-card listing-card--tool">
+                                        <div class="listing-media"></div>
+                                        <div class="listing-body">
+                                            <h3>Lijadora automática</h3>
+                                            <p>Bs 40/día</p>
+                                        </div>
+                                    </article>
 
-<div class="impact-grid">
+                                    <article class="listing-card listing-card--music">
+                                        <div class="listing-media"></div>
+                                        <div class="listing-body">
+                                            <h3>Guitarra de madera</h3>
+                                            <p>Bs 50/día</p>
+                                        </div>
+                                    </article>
 
-<div class="impact-card">
-<h3>🌱 Reducción de consumo</h3>
-<p>Menos compras innecesarias y menos residuos.</p>
-</div>
+                                    <article class="listing-card listing-card--bike">
+                                        <div class="listing-media"></div>
+                                        <div class="listing-body">
+                                            <h3>Bicicleta de ciudad</h3>
+                                            <p>Bs 65/día</p>
+                                        </div>
+                                    </article>
+                                </div>
 
-<div class="impact-card">
-<h3>💰 Ingresos adicionales</h3>
-<p>Personas monetizan lo que ya poseen.</p>
-</div>
+                                <div class="screen-nav" aria-hidden="true">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="nav-dot is-current"><i class="fa-solid fa-home"></i></span>
+                                    <i class="fa-regular fa-comment"></i>
+                                    <i class="fa-regular fa-bell"></i>
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="impact-card">
-<h3>♻ Economía circular</h3>
-<p>Un modelo sostenible y colaborativo.</p>
-</div>
+                    <div class="stage-caption">Desde un taladro hasta una bicicleta, úsalo solo cuando lo necesitas.</div>
+                </div>
+            </div>
+        </section>
 
-</div>
-</section>
+        <section class="inventory-ribbon" aria-label="Objetos disponibles para alquilar">
+            <div class="ribbon-line">
+                <div class="ribbon-track ribbon-track--left">
+                    <div class="ribbon-sequence">
+                        <span class="ribbon-item"><i class="fa-solid fa-toolbox"></i> Taladro</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-video"></i> Proyector</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-camera"></i> Cámara</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-couch"></i> Sofá</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-bicycle"></i> Bicicleta</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-guitar"></i> Guitarra</span>
+                    </div>
+                    <div class="ribbon-sequence" aria-hidden="true">
+                        <span class="ribbon-item"><i class="fa-solid fa-toolbox"></i> Taladro</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-video"></i> Proyector</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-camera"></i> Cámara</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-couch"></i> Sofá</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-bicycle"></i> Bicicleta</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-guitar"></i> Guitarra</span>
+                    </div>
+                </div>
+            </div>
 
-<footer>
-<p>© 2026 AlquilaloTu</p>
-</footer>
+            <div class="ribbon-line">
+                <div class="ribbon-track ribbon-track--right">
+                    <div class="ribbon-sequence">
+                        <span class="ribbon-item"><i class="fa-solid fa-tv"></i> Monitor</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-chair"></i> Sillas</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-briefcase"></i> Equipos</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-music"></i> Sonido</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-lightbulb"></i> Iluminación</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-box-open"></i> Almacenaje</span>
+                    </div>
+                    <div class="ribbon-sequence" aria-hidden="true">
+                        <span class="ribbon-item"><i class="fa-solid fa-tv"></i> Monitor</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-chair"></i> Sillas</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-briefcase"></i> Equipos</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-music"></i> Sonido</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-lightbulb"></i> Iluminación</span>
+                        <span class="ribbon-item"><i class="fa-solid fa-box-open"></i> Almacenaje</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<script src="script.js"></script>
+        <section class="proof-grid reveal" aria-label="Beneficios de la plataforma">
+            <article class="proof-card">
+                <div class="proof-value">
+                    <span class="proof-number" data-target="2" data-pad="2">00</span>
+                    <span class="proof-unit">min</span>
+                </div>
+                <p>para publicar un objeto con fotos, precio y disponibilidad.</p>
+            </article>
+
+            <article class="proof-card">
+                <div class="proof-value">
+                    <span class="proof-number" data-target="12">00</span>
+                    <span class="proof-unit">categorías</span>
+                </div>
+                <p>para cubrir necesidades reales del hogar, eventos y trabajo.</p>
+            </article>
+
+            <article class="proof-card">
+                <div class="proof-value">
+                    <span class="proof-number" data-target="3" data-pad="2">00</span>
+                    <span class="proof-unit">pasos</span>
+                </div>
+                <p>desde la publicación hasta el alquiler, sin procesos innecesarios.</p>
+            </article>
+
+            <article class="proof-card">
+                <div class="proof-value">
+                    <span class="proof-number" data-target="24" data-suffix="/7">00</span>
+                </div>
+                <p>para mantener tus objetos visibles y listos para generar valor.</p>
+            </article>
+        </section>
+
+        <section class="editorial-section reveal" id="la-app">
+            <div class="section-heading">
+                <span class="eyebrow">La app</span>
+                <h2>Una plataforma sobria, directa y útil.</h2>
+                <p>Diseñada para alquilar con criterio, no para distraer.</p>
+            </div>
+
+            <div class="editorial-grid">
+                <article class="editorial-panel editorial-panel--dark">
+                    <div>
+                        <p class="panel-kicker">Pensada para vida real</p>
+                        <h3>No todo se compra. Muchas cosas solo se necesitan por un momento.</h3>
+                        <p>
+                            AlquilaloTu convierte objetos inmóviles en acceso útil. Publica lo que no usas,
+                            encuentra lo que necesitas y evita compras que solo resuelven una ocasión puntual.
+                        </p>
+                    </div>
+
+                    <ul class="editorial-list">
+                        <li>Publicación rápida con precio diario visible.</li>
+                        <li>Categorías claras para hogar, trabajo y eventos.</li>
+                        <li>Una estética más seria, enfocada en confianza y claridad.</li>
+                    </ul>
+                </article>
+
+                <article class="editorial-panel">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>Búsqueda clara</h3>
+                    <p>Encuentra objetos por necesidad, cercanía y categoría sin ruido visual.</p>
+                </article>
+
+                <article class="editorial-panel">
+                    <i class="fa-solid fa-tag"></i>
+                    <h3>Precio diario visible</h3>
+                    <p>Cada publicación muestra el costo de forma directa para decidir rápido.</p>
+                </article>
+
+                <article class="editorial-panel">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h3>Objetos con valor</h3>
+                    <p>Lo que hoy ocupa espacio puede resolver una necesidad concreta mañana.</p>
+                </article>
+
+                <article class="editorial-panel">
+                    <i class="fa-solid fa-shield-alt"></i>
+                    <h3>Experiencia confiable</h3>
+                    <p>Una estructura clara transmite seguridad, orden y una propuesta más madura.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="process-section reveal" id="como-funciona">
+            <div class="section-heading">
+                <span class="eyebrow">Cómo funciona</span>
+                <h2>Publica. Conecta. Alquila.</h2>
+                <p>Tres movimientos simples para activar objetos que hoy están quietos.</p>
+            </div>
+
+            <div class="process-grid">
+                <article class="process-card">
+                    <span class="process-index">01</span>
+                    <h3>Publica</h3>
+                    <p>Sube fotos, define el precio diario y deja claro cuándo está disponible.</p>
+                </article>
+
+                <article class="process-card">
+                    <span class="process-index">02</span>
+                    <h3>Coordina</h3>
+                    <p>Conecta con personas interesadas y acuerda la entrega según tu contexto.</p>
+                </article>
+
+                <article class="process-card">
+                    <span class="process-index">03</span>
+                    <h3>Genera valor</h3>
+                    <p>Tu objeto vuelve a tener movimiento, utilidad y retorno sin venderlo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="advantage-section reveal" id="ventajas">
+            <div class="section-heading">
+                <span class="eyebrow">Ventajas</span>
+                <h2>Menos gasto inmovilizado. Más acceso útil.</h2>
+                <p>Una forma más inteligente de resolver necesidades temporales.</p>
+            </div>
+
+            <div class="advantage-layout">
+                <article class="advantage-highlight">
+                    <p class="panel-kicker">Mentalidad de alquiler</p>
+                    <h3>Comprar menos no es renunciar. Es decidir mejor cuándo conviene usar y cuándo conviene tener.</h3>
+
+                    <div class="advantage-list">
+                        <div class="advantage-item">
+                            <span>01</span>
+                            <p>Evitas compras impulsivas para objetos de uso ocasional.</p>
+                        </div>
+                        <div class="advantage-item">
+                            <span>02</span>
+                            <p>Recuperas espacio y transformas activos dormidos en ingresos.</p>
+                        </div>
+                        <div class="advantage-item">
+                            <span>03</span>
+                            <p>Accedes a más opciones sin asumir el costo completo de propiedad.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="use-case-grid">
+                    <article class="use-case-card">
+                        <i class="fa-solid fa-toolbox"></i>
+                        <h3>Hogar y mejoras</h3>
+                        <p>Taladros, lijadoras, escaleras e instrumentos para resolver proyectos puntuales.</p>
+                    </article>
+
+                    <article class="use-case-card">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Eventos y reuniones</h3>
+                        <p>Proyectores, sillas, parlantes y mobiliario para ocasiones que no se repiten todos los días.</p>
+                    </article>
+
+                    <article class="use-case-card">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>Trabajo y producción</h3>
+                        <p>Monitores, equipos de apoyo y objetos útiles para tareas o temporadas específicas.</p>
+                    </article>
+
+                    <article class="use-case-card">
+                        <i class="fa-solid fa-bicycle"></i>
+                        <h3>Movilidad y estilo de vida</h3>
+                        <p>Bicicletas, instrumentos y artículos especiales para usar cuando realmente hacen falta.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section reveal" id="descarga">
+            <div class="cta-box">
+                <div>
+                    <span class="eyebrow">Descarga</span>
+                    <h2>Empieza a alquilar con una experiencia más limpia, más seria y más útil.</h2>
+                    <p>Publica lo que no usas o encuentra lo que necesitas sin comprar de más.</p>
+                </div>
+
+                <div class="cta-actions">
+                    <a
+                        class="btn btn-solid"
+                        href="https://play.google.com/store/apps/details?id=com.davidsilvbv.AlquilaloTu&pcampaignid=web_share"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-google-play"></i>
+                        Descargar app
+                    </a>
+                    <a class="btn btn-outline btn-outline-light" href="#inicio">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        Volver arriba
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <a class="brand footer-brand-link" href="#inicio">AlquilaloTu</a>
+            <p>Economía circular con criterio práctico para gente que prefiere acceso antes que acumulación.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#la-app">La app</a>
+            <a href="#como-funciona">Cómo funciona</a>
+            <a href="#ventajas">Ventajas</a>
+            <a href="#descarga">Descarga</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
