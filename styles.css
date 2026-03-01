@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Fredoka:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
     --bg: #f1ede5;
@@ -17,7 +17,7 @@
     --shadow-lg: 0 30px 80px rgba(19, 24, 21, 0.14);
     --shadow-md: 0 20px 45px rgba(19, 24, 21, 0.1);
     --shadow-sm: 0 12px 28px rgba(19, 24, 21, 0.08);
-    --font-display: 'Fraunces', serif;
+    --font-display: 'Fredoka', sans-serif;
     --font-body: 'Manrope', sans-serif;
     --content-width: 1240px;
 }
@@ -138,7 +138,7 @@ main {
     font-family: var(--font-display);
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
     color: var(--ink);
 }
 
@@ -196,6 +196,7 @@ main {
 }
 
 .eyebrow {
+    font-family: var(--font-display);
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -213,9 +214,13 @@ main {
 
 .hero h1,
 .section-heading h2,
+.editorial-panel h3,
+.process-card h3,
+.use-case-card h3,
 .editorial-panel--dark h3,
 .advantage-highlight h3,
-.cta-box h2 {
+.cta-box h2,
+.panel-kicker {
     font-family: var(--font-display);
 }
 
