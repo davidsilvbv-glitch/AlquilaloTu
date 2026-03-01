@@ -1,10 +1,73 @@
 document.addEventListener('DOMContentLoaded', () => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const siteHeader = document.querySelector('.site-header');
+    const floatingIconsLayer = document.querySelector('.floating-icons-layer');
     const revealItems = document.querySelectorAll('.reveal');
     const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
     const sections = document.querySelectorAll('section[id]');
     const proofNumbers = document.querySelectorAll('.proof-number');
+    let floatingIconsResizeTimer = null;
+
+    const floatingIconPool = [
+        'fa-toolbox',
+        'fa-video',
+        'fa-tv',
+        'fa-bicycle',
+        'fa-camera',
+        'fa-guitar',
+        'fa-couch',
+        'fa-chair',
+        'fa-briefcase',
+        'fa-lightbulb',
+        'fa-laptop',
+        'fa-music',
+        'fa-headphones',
+        'fa-gamepad',
+        'fa-print',
+        'fa-wrench',
+        'fa-blender',
+        'fa-fan'
+    ];
+
+    const buildFloatingIcons = () => {
+        if (!floatingIconsLayer) {
+            return;
+        }
+
+        floatingIconsLayer.innerHTML = '';
+
+        const iconCount = window.innerWidth < 640 ? 12 : window.innerWidth < 1024 ? 18 : 26;
+
+        for (let index = 0; index < iconCount; index += 1) {
+            const icon = document.createElement('i');
+            const iconName = floatingIconPool[Math.floor(Math.random() * floatingIconPool.length)];
+            const opacity = (0.08 + Math.random() * 0.09).toFixed(2);
+            const driftX = (Math.random() * 160 - 80).toFixed(0);
+            const driftY = (Math.random() * 180 - 90).toFixed(0);
+            const rotateStart = (Math.random() * 50 - 25).toFixed(1);
+            const rotateEnd = (Math.random() * 90 - 45).toFixed(1);
+            const size = (1.35 + Math.random() * 1.85).toFixed(2);
+            const duration = (18 + Math.random() * 20).toFixed(1);
+
+            icon.className = `fa-solid ${iconName} floating-icon`;
+            icon.style.left = `${(Math.random() * 100).toFixed(2)}%`;
+            icon.style.top = `${(Math.random() * 100).toFixed(2)}%`;
+            icon.style.fontSize = `${size}rem`;
+            icon.style.setProperty('--opacity', opacity);
+            icon.style.setProperty('--dx', `${driftX}px`);
+            icon.style.setProperty('--dy', `${driftY}px`);
+            icon.style.setProperty('--rotate-start', `${rotateStart}deg`);
+            icon.style.setProperty('--rotate-end', `${rotateEnd}deg`);
+            icon.style.setProperty('--duration', `${duration}s`);
+            icon.style.animationDelay = `-${(Math.random() * 18).toFixed(1)}s`;
+
+            if (prefersReducedMotion) {
+                icon.style.animation = 'none';
+            }
+
+            floatingIconsLayer.appendChild(icon);
+        }
+    };
 
     const updateHeaderState = () => {
         if (!siteHeader) {
@@ -86,6 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateHeaderState();
     window.addEventListener('scroll', updateHeaderState, { passive: true });
+    buildFloatingIcons();
+
+    window.addEventListener('resize', () => {
+        window.clearTimeout(floatingIconsResizeTimer);
+        floatingIconsResizeTimer = window.setTimeout(buildFloatingIcons, 180);
+    });
 
     if (window.location.hash) {
         setActiveLink(window.location.hash.slice(1));
