@@ -1066,6 +1066,10 @@ main {
     max-width: 860px;
 }
 
+.legal-section--standalone {
+    padding-top: 2rem;
+}
+
 .legal-entry {
     padding: 2.2rem;
     border: 1px solid rgba(21, 26, 23, 0.08);
@@ -1119,11 +1123,13 @@ main {
 .legal-body {
     display: grid;
     gap: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.75;
 }
 
 .legal-body h4 {
-    margin-top: 1rem;
-    font-size: 1.05rem;
+    margin-top: 1.2rem;
+    font-size: 1.08rem;
     color: var(--ink);
 }
 
@@ -1146,6 +1152,10 @@ main {
     color: var(--accent-deep);
     text-decoration: underline;
     text-underline-offset: 0.18em;
+}
+
+.legal-body p strong {
+    color: var(--ink);
 }
 
 .footer-legal-link {
